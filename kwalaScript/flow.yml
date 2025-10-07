@@ -1,0 +1,36 @@
+Name: SubStream_final_d3fa_6a01
+Trigger:
+  TriggerSourceContract: NA
+  TriggerChainID: NA
+  TriggerEventName: NA
+  TriggerEventFilter: NA
+  TriggerSourceContractABI: NA
+  TriggerPrice: NA
+  RecurringSourceContract: NA
+  RecurringChainID: NA
+  RecurringEventName: NA
+  RecurringEventFilter: NA
+  RecurringSourceContractABI: NA
+  RecurringPrice: NA
+  RepeatEvery: 30d
+  ExecuteAfter: immediate
+  ExpiresIn: 1884522120
+  Meta: NA
+  ActionStatusNotificationPOSTURL: https://workflow-notification-test.kalp.network/push_notification
+  ActionStatusNotificationAPIKey: NA
+Actions:
+  - Name: payement
+    Type: post
+    APIEndpoint: https://0214195035fb.ngrok-free.app/execute-payment
+    APIPayload:
+      wallet_address: '0x64837E3827FCcF0aD406A6D6fC3dD3De0234D3fA'
+    TargetContract: NA
+    TargetFunction: NA
+    TargetParams: 
+    ChainID: NA
+    EncodedABI: NA
+    Bytecode: NA
+    Metadata: NA
+    RetriesUntilSuccess: 5
+Execution:
+  Mode: parallel
